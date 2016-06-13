@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+		<select name="estado" id="estado">
+			<option value="pe">PE</option>
+			<option value="al">AL</option>
+		</select>
+		
+		<br>
+		
+		<label> Escolha a Cidade </label>
+		<select name="cidade" id="cidade">
+		</select>
+		
+		<script>
+			
+			var opt = document.createElement("option");
+			var selEstado = document.getElementById("estado");
+			selEstado.appendChild(opt);
+			opt.innerHTML = "CE";
+			opt.value = "ce";
+			
+			
+			
+		/*	var bt = document.createElement("button");
+			//var corpo = document.getElementByTagName("body");
+			document.body.appendChild(bt);
+			bt.innerHTML = "Enviar"; */
+			
+		</script>
+		
+	</body>
+</html>

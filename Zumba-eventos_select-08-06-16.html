@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<script>
+			
+			function selecionaCampus(){
+				var select = document.getElementById("campus");
+				//var select1 = valorSelect.value;
+				var pselect = document.getElementById("pselect");
+				//pselect.innerHTML = select1;
+				pselect.innerHTML = select.value;
+			}
+			
+		</script>
+		
+		<meta charset="utf-8">
+		
+	</head>
+	<body>
+		
+		<select name="campus" id="campus" onchange="selecionaCampus()">
+			<option value="">Selecione um Campus</option>
+			<option value="1">Jaboatão</option>
+			<option value="2">Vitória</option>
+			<option value="3">Recife</option>
+		</select>
+		<p id="pselect" style="color:#006400;"></p>
+			
+	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+
+<script>
+	function imprimeParagrafo(){
+		var frase = document.getElementById("frase");
+		var valor = frase.value;
+		var final = document.getElementById("pfrase");
+		pfrase.innerHTML = valor;
+	}
+	
+	function mudarCor(){
+		var frase = document.getElementById("frase");
+		frase.style.backgroundColor = "#FFFF00";
+	}
+	
+	function mudarFrase(){
+		var frase = document.getElementsByClass("estilo1");
+		var troca = frase[0].value;
+		
+	}
+</script>
+
+<meta charset="utf-8">
+
+</head>
+
+<body>
+	
+	Input 1<input type="text" class="estilo1">
+	<br>
+	Input 2<input type="text" class="estilo1">
+	<br>
+	Input 3<input type="text" class="estilo1">
+	<br>
+	<input type="submit" value="VAI" onchange="mudarFrase();">
+	<br>
+	
+	<!--
+	<input type="text" id="frase" onkeypress="mudarCor();" onblur="imprimeParagrafo();">
+	<p id="pfrase" style="color:#006400;"></p> -->
+	
+</body>
+
+</html>

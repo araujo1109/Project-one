@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+		<head>
+
+			<meta charset="utf-8">
+
+			<script>
+				function calcularIMC(){
+				var a = document.getElementsByName("altura");
+				var p = document.getElementsByName("peso");
+				var imc = p[0].value / (a[0].value*a[0].value)
+				alert(imc);
+				}
+			</script>
+				
+			
+		</head>
+
+	<body>
+	
+	
+	
+	<label>
+	Altura:<br /> 
+	</label>
+	<input type="text" name="altura"></input>
+	
+	
+	<br><br>
+	
+	<label>
+	Peso:<br />
+	</label>
+	<input type="text" name="peso"></input>
+	
+	
+	<br><br>
+	
+	<button onclick="calcularIMC();">Calcular</button>
+		
+	</body>
+
+</html>

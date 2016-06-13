@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Aula</title>
+	</head>
+	<body>
+		<h1 id="titPrincipal">Título</h1>
+		
+		<label>Legenda</label>
+		<p>Estamos estudando DOM!!</p>
+		<label>Legenda 2</label>
+		<p id="jv1">JavaScript é uma linguagem poderosa!!</p>
+		
+		<form>
+		
+		<input type="text" id="nome" name="nome" value="Zumba">
+		
+		</form>
+		<p id="p1" style="color:#006400;">Olá!!</p>
+		
+		<script>
+			var nome = document.getElementById("nome");
+			alert(nome.value);
+			var paragrafo = document.getElementById("p1");
+			paragrafo.innerHTML = "Hello my friend.";
+			paragrafo.style.color="#FF1493";
+			paragrafo.style.fontSize = "30px";
+		</script>
+	</body>
+</html>
